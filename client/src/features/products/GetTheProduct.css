@@ -1,0 +1,117 @@
+.product-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-image img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    height: 513px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Assistant", sans-serif;
+    text-align: right;
+}
+
+.product-title {
+    font-size: 3rem;
+    font-weight: 700px;
+    color: #000;
+}
+
+
+.product-price {
+    font-size: 2rem;
+    font-weight: 900px;
+    color: #000;
+}
+
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-to-cart-button {
+    background-color: black;
+    color: white;
+    /* border-radius: 25px; */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    /* width: fit-content; */
+    width: 500px;
+}
+
+.add-to-cart-button:hover {
+    background-color: rgb(100, 99, 99);
+
+}
+
+
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    direction: rtl;
+}
+
+.product-quantity label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.custom-qty-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: black;
+    width: 2.5rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-qty-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* 
+.p-inputnumber-button {
+    border-radius: 50%;
+} */
+
+.p-inputnumber {
+    direction: ltr;
+    /* חשוב כדי שכפתורי + ו- יהיו בצד הנכון */
+}
+
+.rating {
+
+    color: black;
+    left: 387px;
+    /* משפיע על צבע הכוכבים */
+}
+
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+    color: #000000;
+}

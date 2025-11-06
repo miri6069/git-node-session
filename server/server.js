@@ -1,0 +1,20 @@
+require("dotenv").config()
+const express = require("express")
+const cors=require("cors")
+const corsOptions=require("./config/corsOptions")
+const connectDB = require("./config/dbconn")
+const createAdmin=require("./createAdmin")
+const PORT = process.env.PORT || 2500
+const app = express()
+connectDB()
+
+app.use(cors(corsOptions))
+app.use(express.json())
+app.use(express.static("public"))
+createAdmin()
+app.use("/api/user",require("./routes/userRoure"))
+app.use("/api/auth",require("./routes/authRoute"))
+app.use("/api/basket",require("./routes/basketRoute"))
+app.use("/api/products",require("./routes/productsRoute"))
+app.listen(PORT,()=>{console.log(`server running on ${PORT}`)})
+
