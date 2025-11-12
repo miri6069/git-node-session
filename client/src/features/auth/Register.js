@@ -59,6 +59,8 @@ const Register = () => {
             <button type="submit">Send</button>
             <div>
                 <h5><a href="/login">להתחברות לחצו</a></h5>
+ 
+                <p>this p added by racheli</p>
             </div>
         </form>
     </div>
