@@ -55,6 +55,7 @@ const Login = () => {
             <button type="submit">Send</button>
             <div>
                 <h5>עדיין לא נרשמת? <a href="/register">להרשמה</a> </h5>
+                <h2>hiiii</h2>
 
             </div>
         </form>

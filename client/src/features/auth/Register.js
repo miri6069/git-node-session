@@ -58,7 +58,7 @@ const Register = () => {
             </div>
             <button type="submit">Send</button>
             <div>
-                <h5><a href="/login">להתחברות</a></h5>
+                <h5><a href="/login">להתחברות לחצו</a></h5>
             </div>
         </form>
     </div>
